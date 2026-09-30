@@ -3,17 +3,17 @@ Here is the full, final, simplified `README.md` ready to be copied and pasted di
 ```markdown
 # 📡 Mini Device Fleet Monitor
 
-## What the project does
+ What the project does
 The Mini Device Fleet Monitor is a backend service designed to track a fleet of simulated devices. It provides REST APIs for devices to register and send periodic telemetry heartbeats. The system automatically determines if a device is `ONLINE` or `OFFLINE` based on a strict 30-second timeout threshold. A built-in simulator is included to generate mock telemetry and test the timeout behavior in real-time.
 
-## Design / Architecture
+Design / Architecture
 - **Framework:** FastAPI is used for the REST API due to its speed, built-in asynchronous capabilities, and automatic OpenAPI documentation.
 - **Data Validation:** Pydantic models ensure all incoming JSON payloads are strictly type-checked and meet exact API requirements.
 - **State Management:** Device data and heartbeats are stored in-memory using basic Python dictionaries. This prioritizes speed and simplicity for the scope of this assessment.
 - **Timeout Logic:** Timezone-aware UTC datetimes are used to accurately calculate the elapsed time since the last heartbeat.
 - **Simulator:** Uses standard Python threading (daemon threads) to run multiple simulated devices concurrently without requiring complex asynchronous event loops.
 
-## Prerequisites
+Prerequisites
 - Python 3.11 or higher
 - `pip`
 
