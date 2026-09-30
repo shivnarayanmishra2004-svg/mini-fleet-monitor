@@ -1,7 +1,6 @@
-Here is the full, final, simplified `README.md` ready to be copied and pasted directly into your project.
 
 ```markdown
-# 📡 Mini Device Fleet Monitor
+ 📡 Mini Device Fleet Monitor
 
  What the project does
 The Mini Device Fleet Monitor is a backend service designed to track a fleet of simulated devices. It provides REST APIs for devices to register and send periodic telemetry heartbeats. The system automatically determines if a device is `ONLINE` or `OFFLINE` based on a strict 30-second timeout threshold. A built-in simulator is included to generate mock telemetry and test the timeout behavior in real-time.
@@ -17,7 +16,7 @@ Prerequisites
 - Python 3.11 or higher
 - `pip`
 
-## How to build the application
+ How to build the application
 First, create a virtual environment and install the required dependencies:
 
 ```bash
@@ -127,3 +126,5 @@ curl [http://127.0.0.1:8000/summary](http://127.0.0.1:8000/summary)
 ```
 
 ```
+
+Note:This is an account i made as my main github account was inaccessible . My main github account is at : https://github.com/ShivNarayan-Mishra
